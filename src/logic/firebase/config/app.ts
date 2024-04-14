@@ -1,15 +1,21 @@
-import { initializeApp } from 'firebase/app';
-import { getStorage } from 'firebase/storage';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-const app = initializeApp({
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-});
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB2iRRwEjVqoEiLU2qEJghgBwfM2XR2T_w",
+  authDomain: "gmimobiliaria-6e151.firebaseapp.com",
+  projectId: "gmimobiliaria-6e151",
+  storageBucket: "gmimobiliaria-6e151.appspot.com",
+  messagingSenderId: "1090511685210",
+  appId: "1:1090511685210:web:72ca4dd471ca308409fa63",
+  measurementId: "G-0DSNCTPBLK"
+};
 
-const storage = getStorage(app);
-
-export { app, storage };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
