@@ -1,0 +1,14 @@
+Eventos - caixabar - DB ( Estoqueitensbarevento ) produtos criados caixa
+                        (produtosbareventos) produtos adicionados pelo atendente
+
+
+
+Eventos - caixaentrada - DB ( EstoqueitensEntradacaixaevento ) produtos criados caixa
+                        (produtosEntradaeventos) produtos adicionados pelo atendente
+                        (ListaFreeEntradaeventos) Lsita adicionados pelo organizador
+
+
+
+
+Eventos - caixaEstacionamento - DB ( EstoqueitensEstacionamentoevento ) produtos criados caixa
+                        (produtosEstacionamentoeventos) produtos adicionados pelo atendente
